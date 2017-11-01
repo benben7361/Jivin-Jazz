@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>About Jivin' Jazz</title>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<!--script type="text/javascript" src="happy.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/sticky-nav.js"></script>
+	<script src="js/responsive-nav.js"></script>
+</head>
+<body>
+	<div id="header-logo">
+		<header class="inner">
+			<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+		</header>
+	</div>
+	<div class="sticky-nav">
+		<nav class="nav-collapse">
+			<div class="inner">
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="musician.html">Musician</a></li>
+					<li><a href="recordings.html">Recordings</a></li>		
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="image-wrap">
+		<img src="images/about-us.jpg" alt="jazz" class="full-images">
+		
+	</div>
+	<main class="inner">
+		<div id="privacy-policy">
+			<h1>Jivin' Jazz Privacy Policy</h1>
+            <p>We collect users’ name, age and e-mail address for the purpose of distributing our weekly newsletter service. The e-mail address provided will be used for delivery of information users have requested from this website.</p>
+            <p>The information we collect is not shared with other organizations for commercial purposes. We will never sell or rent users’ email address for any reason.</p>
+            <p>In order to qualify to receive e-mail related services from Jivin’ Jazz, users will be required to confirm their service request by clicking a confirmation link sent to the e-mail address provided. By confirming users’ e-mail address, they will begin to receive newsletter updates from Jivin’ Jazz until such time that the service is discontinued, or users choose to unsubscribe.</p>
+            <p>Please let us know if the personal information which we hold about you needs to be corrected or updated.</p>
+            <p>Users can opt out of receiving information from us at any point by selecting the unsubscribe link at the bottom of the newsletter. They can also contact us directly to request that they are removed from our mailing list.</p>
+            <p>We may update this privacy policy from time-to-time by posting a new version on our website. users should check this page occasionally to ensure they are happy with any changes.</p>
+            <p>If users have any concerns regarding privacy, please send an email to <a href="mailto:miles@jivin-jazz.co.nz" class="anchor-in-content">miles@jivin-jazz.co.nz</a></p>
+		</div>
+	</main>
+	
+	<footer>
+        <div class="inner">
+			<div id="footer-logo">
+				<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+			</div>
+            <ul>
+				<li><a href="about-us.html">About Jivin' Jazz</a></li>				
+                <li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="blog.html">Blog</a></li>	
+            </ul>
+			<ul id="copyright-privacy">
+                <li><p>&copy; Jivin' Jazz, 2016</p></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+	
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+	
+</body>
+</html>

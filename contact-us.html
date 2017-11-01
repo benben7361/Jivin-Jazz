@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>About Jivin' Jazz</title>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<!--script type="text/javascript" src="happy.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="js/sticky-nav.js"></script>
+	<script src="js/responsive-nav.js"></script>
+
+</head>
+<body>
+	<div id="header-logo">
+		<header class="inner">
+			<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+		</header>
+	</div>
+	<div class="sticky-nav">
+		<nav class="nav-collapse">
+			<div class="inner">
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="musician.html">Musician</a></li>
+					<li><a href="recordings.html">Recordings</a></li>
+					<li><a href="contact-us.html" id="current-page">Contact Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="image-wrap">
+		<img src="images/contact-us.jpg" alt="Contact Us" class="full-images">
+		
+	</div>
+	<main class="inner">
+		<h1 class="sub-headings">Contact us</h1>
+		<div id="map-section">
+			<div class="contact">
+				<p class="paragraph"><span class="underline">We are located at:</span><br>130 Madras Street<br>
+				Christchurch 8140, New Zealand</p>
+                <p class="paragraph"><span class="underline">Phone:</span>&nbsp;0800 24 24 76</p>
+                <p class="paragraph"><span class="underline">Email:</span>&nbsp;<a href="mailto:miles@jivin-jazz.co.nz" class="anchor-in-content">miles@jivin-jazz.co.nz</a></p>
+                <p class="paragraph"><span class="underline">Post:</span>&nbsp;P O Box 540, Christchurch Mail Centre, Christchurch 8140, New Zealand</p>
+			</div>
+			<div id="map"></div>
+		</div>
+		<div id="newsletter">
+			<h1 class="sub-headings">Free Newsletter</h1>
+            <p class="paragraph">Please subscribe to our mailing list if you would like to receive emails about newsletters and other information relevant to Jazz music. Please read our <a href="privacy-policy.html" class="anchor-in-content">privacy policy</a>.</p>
+			<form method = "POST" action="mailto:miles@jivin-jazz.co.nz?subject=Newsletter">
+               
+                <label for="name" class="label-field">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Name">
+                <br>
+
+                <label for="email" class="label-field">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+                <br> 
+
+                <label for="age" class="label-field">Age</label>
+                <input type="text" name="age" id="age" required placeholder="Age">
+                <br> 
+                <input type="submit" value="Subscribe" id="submit">		
+            </form>
+        </div>
+    </main>
+	
+	<footer>
+        <div class="inner">
+			<div id="footer-logo">
+				<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+			</div>
+            <ul>
+				<li><a href="about-us.html">About Jivin' Jazz</a></li>				
+                <li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="blog.html">Blog</a></li>	
+            </ul>
+			<ul id="copyright-privacy">
+                <li><p>&copy; Jivin' Jazz, 2016</p></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+
+		function myMap() {
+		  var mapCanvas = document.getElementById("map");
+		  var location = new google.maps.LatLng(-43.5383536, 172.6435894);
+		  var mapOptions = {
+			center: location,
+			zoom: 16
+		  }
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		  var marker = new google.maps.Marker({
+			position: location,
+			map: map,
+		  });
+		}
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

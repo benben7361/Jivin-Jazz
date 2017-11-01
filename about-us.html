@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>About Jivin' Jazz</title>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<!--script type="text/javascript" src="happy.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/sticky-nav.js"></script>
+	<script src="js/responsive-nav.js"></script>
+</head>
+<body>
+	<div id="header-logo">
+		<header class="inner">
+			<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+		</header>
+	</div>
+	<div class="sticky-nav">
+		<nav class="nav-collapse">
+			<div class="inner">
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html" id="current-page">About Us</a></li>
+					<li><a href="musician.html">Musician</a></li>
+					<li><a href="recordings.html">Recordings</a></li>		
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="image-wrap">
+		<img src="images/about-us.jpg" alt="jazz" class="full-images">
+		
+	</div>
+	<main class="inner">
+		<div id="content">
+			<div class="description">
+				<figure>
+					<img src="images/miles-coltrane_1.jpg" alt ="Miles Coltrane" class="full-images">
+				</figure>
+				<div class="text">
+					<h1 class="sub-headings">Miles Coltrane</h1>
+					<p>Miles Coltrane started collecting recordings of live jazz performances when he was a schoolboy. He had a music teacher at school who would regularly played jazz records to introduce the pupils to a broader range of music. The teacher would talk passionately about the different pieces of music. He showed the pupils how jazz musicians interacted with each other to create spontaneous live performances. Miles was hooked. He started to look around for recordings to collect for himself. He also bought a professional-quality Sony tape recorder with money he earnt delivering supermarket pamphlets and used it record some jazz gigs himself. Slowly, but steadily, his collection grew.</p>
+				</div>
+			</div>
+			<div class="description">
+				<figure>
+					<img src="images/miles-coltrane_2.jpg" alt ="Miles Coltrane" class="full-images">
+				</figure>
+				<div class="text">
+					<h1 class="sub-headings">Jivin' Jazz</h1>
+					<p>In 1999 Miles decided to make collecting jazz recordings his main focus. He established his company, Jivin' Jazz, and has been devoting more time to collecting recordings ever since. He still goes out and records live performances himself, when the musicians give him permission. Currently, he has thousands of recordings, including many that are considered to be significant. The idea came to him that it would be wonderful to be able to share his recordings with people from around the world, so he has started this website, which showcases the music he has collected.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+        <div class="inner">
+			<div id="footer-logo">
+				<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+			</div>
+            <ul>
+				<li><a href="about-us.html">About Jivin' Jazz</a></li>				
+                <li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="blog.html">Blog</a></li>	
+            </ul>
+			<ul id="copyright-privacy">
+                <li><p>&copy; Jivin' Jazz, 2016</p></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+	
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+	
+</body>
+</html>

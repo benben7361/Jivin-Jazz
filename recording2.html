@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>About Jivin' Jazz</title>
+	<link rel="stylesheet" href="css/flexslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	
+	<!--script type="text/javascript" src="happy.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/sticky-nav.js"></script>
+	<script src="js/responsive-nav.js"></script>
+	<link rel="stylesheet" href="css/flexslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+	<div id="header-logo">
+		<header class="inner">
+			<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+		</header>
+	</div>
+	<div class="sticky-nav">
+		<nav class="nav-collapse">
+			<div class="inner">
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html" >About Us</a></li>
+					<li><a href="musician.html" >Musician</a></li>
+					<li><a href="recordings.html" id="current-page">Recordings</a></li>		
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="image-wrap">
+		<img src="images/recordings.jpg" alt="Recordings" class="full-images">
+	</div>
+	<main class="inner">
+		
+		<div id="video-page">
+            
+            <div class="video-section">
+                <h1 class="sub-headings">Crossings</h1>
+                <video controls>
+                    <source src="media/video_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Date: 1978</p>
+                <p>Amazingly enough, this set (reissued on CD) was the first time that pianist Red Garland and drummer Philly Joe Jones recorded together in a trio setting, even though they had both been a part of Miles Davis' first classic quintet. With bassist Ron Carter completing the group, they perform five standards and the bassist's "Railoroad Crossing." This is one of Garland's best later dates (Philly Joe often pushes him), and the highlights include "Solar," "Oleo" and "Love for Sale."</p>
+            </div>
+            
+            <div class="video-menu">
+			
+				<figure class="items" id="current-video">
+                    <a href="recording2.html"><img src="images/item_2.jpg" alt="Crossings" class="video_anchor"></a>
+                    <p>Crossings</p>
+                </figure>
+				
+                <figure class="items">
+                    <a href="recording1.html"><img src="images/item_1.jpg" alt="John Coltrane with the Red Garland Trio" class="video_anchor"></a>
+                    <p>John Coltrane and Red Garland Trio</p>
+                </figure>
+                
+                <figure class="items">
+                    <a href="recording3.html"><img src="images/item_3.jpg" alt="Misty" class="video_anchor"></a>
+                    <p>Misty</p>
+                </figure>
+                <figure class="items">
+                    <img src="images/item_4.jpg" alt="Auf Wiedersehen" class="video-images">
+                    <p>Auf Wiedersehen</p>
+                </figure>
+                <figure class="items">
+                    <img src="images/item_5.jpg" alt="Swingin on the korner" class="video-images">
+                    <p>Swingin on the korner</p>
+                </figure>
+                <figure class="items">
+                    <img src="images/item_6.jpg" alt="Red garland and Miles Davis" class="video-images">
+                    <p>Red garland and Miles Davis</p>
+                </figure>
+                <figure class="items">
+                    <img src="images/item_7.jpg" alt="Billy Boy" class="video_anchor">
+                    <p>Billy Boy</p>
+                </figure>
+                <figure class="items">
+                    <img src="images/item_8.jpg" alt="Galaxy all stars in Tokyo" class="video-images">
+                    <p>Galaxy all stars in Tokyo</p>
+                </figure>
+            </div>
+        </div>
+	</main>
+	
+	<footer>
+        <div class="inner">
+			<div id="footer-logo">
+				<a href="index.html"><img src="images/logo.png" alt="Jivin' Jazz"></a>
+			</div>
+            <ul>
+				<li><a href="about-us.html">About Jivin' Jazz</a></li>				
+                <li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="blog.html">Blog</a></li>	
+            </ul>
+			<ul id="copyright-privacy">
+                <li><p>&copy; Jivin' Jazz, 2016</p></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+	
+	<script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+
+    </script>
+	<script>
+          $(window).load(function() {
+            $('.flexslider').flexslider()
+            ;
+          });
+    </script>
+</body>
+</html>
